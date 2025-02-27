@@ -1,0 +1,291 @@
+/*importing Google Fonts - Montserrat*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+body{
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 80px;
+    background-color: purple;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#navbar li{
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+#navbar li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: black;
+    transition: 0.3s ease;
+
+}
+#navbar li a:hover,
+#navbar li a.active{
+    color: white;
+}
+#navbar li a.active::after,
+#navbar li a:hover::after{
+    content: "";
+    width: 30%;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", serif;
+}
+.slider-container{
+    height: 100%;
+    width: 100%;
+    overflow: hidden ;
+}
+.slider-wrapper .slide-item{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.slider-wrapper .slide-item::before{ 
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    filter:brightness(20%);
+    background-image: url(pastor.png.jpg);
+    background-size:cover;
+    background-position:center;
+}
+.slider-wrapper .slide-item:nth-child(2)::before{
+    background-image: url(m.png.JPG);
+}
+.slider-wrapper .slide-item:nth-child(3)::before{
+    background-image: url(church1.JPG);
+}
+.slider-wrapper .slide-item .slide-content{
+    color:white;
+    z-index: 20;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px 10 px;
+    max-width: 1400px;
+    position: relative;
+    text-align: center;
+}.slider-wrapper .slide-item .slide-content>*{
+    max-width: 500px;
+    margin: auto;
+}
+
+.slide-item .slide-content .slide-subtitle{
+    font-size: 1rem;
+    font-weight: normal;
+
+}
+.slide-item .slide-content .slide-title{
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-top: 5px;
+    text-transform: uppercase;
+
+}
+.slide-item .slide-content .slide-description{
+    margin-top: 25px;
+    line-height: 25px;
+    font-weight: 600;
+}
+.slide-item .slide-content .slide-button{
+    color: white;
+    width: 250px;
+    padding: 13px 0;
+    display: block;
+    margin-top: 45px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;border: 2px solid purple;
+    display: block;
+    margin: auto;
+    transition: 0.5s ease;
+}
+.slide-item .slide-content .slide-button:hover{
+    color: white;
+    background-color: blueviolet;
+}
+
+iframe{
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+.slider-navigations button{
+    position: absolute;
+    top: 50%;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    z-index: 20;
+    color: white;
+    background: none;
+    border: none;
+    transform: translateY(-50%);
+    transition: 0.4s ease;
+}
+
+.slider-navigations button:hover{
+    background-color: purple;
+}
+.slider-navigations button#side-prev{
+    left: 20px;
+}
+.slider-navigations button#side-next{
+    right: 20px;
+}
+.middle .verses span{
+    color: white;
+    background: purple;
+    box-shadow: 1px;
+    height: 20px;
+    width: 1200px;
+    text-align: center;
+}
+.middle .verses{
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid black;
+    padding: 20px;
+    margin: 20px;
+    height: 200px;
+    width: 200px;
+}
+.middle{
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+}
+.section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: purple;
+    margin: auto;
+    padding: 20px;
+    color: white;
+    bottom: 0;
+    width: 100%;
+    
+}
+.section-1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    margin: auto;
+    padding: 10px;
+    color: white;
+    bottom: 0;
+    width: 100%;
+    position: fixed;
+}
+.column a{
+    color: white;
+}
+.column a:hover{
+    color: black;
+}
+.what{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.container {
+    width: 500px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+.container  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: purple;
+    color: white;
+  }
+  
+.container p {
+    line-height: 1.6;
+    margin-bottom: 10px;
+  }
+.container a {
+    margin: auto;
+    display: flex;
+    border: 1px solid purple;
+    text-align: center;
+    padding: 10px;
+    color: black;
+    text-decoration: none;
+    width: 100px;
+    height: 40px;
+    text-transform: uppercase;
+}
+
+
+.container a:hover{
+    color: #fff;
+    background-color: purple;
+}
+
+.liar{
+   display: flex;
+   flex-wrap: wrap;
+   width: 100%;
+   height: 100px;
+   justify-content: center;
+   border: 1px solid white;
+   color: #fff;
+   background-image: url("pray.jpg");
+}
+.mission{
+    position: relative;
+    display: block;
+    flex-wrap: wrap;
+    width: 1250px;
+    min-height: 100vh;
+    border: 1px solid white;
+    justify-content: space-between; 
+    margin: auto;
+    padding: 10px;
+    text-align: start;
+    font-family: cursive;
+    color: darkorchid;
+}
+
+
+ 
+  
