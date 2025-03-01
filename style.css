@@ -196,26 +196,23 @@ iframe{
     padding: 20px;
     color: white;
     bottom: 0;
-    width: 100%;
+    width: 100%;git 
     
 }
-.section-1{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: black;
-    margin: auto;
-    padding: 10px;
-    color: white;
-    bottom: 0;
-    width: 100%;
-    position: fixed;
-}
+
+
+
+
+
+
+
+
+
 .column a{
     color: white;
 }
 .column a:hover{
-    color: black;
+    color: blueviolet;
 }
 .what{
     display: flex;
@@ -288,4 +285,15 @@ iframe{
 
 
  
-  
+.section-1{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    margin: auto;
+    padding: 10px;
+    color: #fff;
+    bottom: 0;
+    width: 100%;
+    position: fixed;
+
+}
